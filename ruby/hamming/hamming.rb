@@ -12,3 +12,7 @@ class Hamming
     return hamming_distance
   end
 end
+
+module BookKeeping
+  VERSION = 3
+end
