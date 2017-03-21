@@ -36,37 +36,30 @@ class HammingTest < Minitest::Test
   end
 
   def test_non_unique_character_in_first_strand
-    skip
     assert_equal 1, Hamming.compute('AGA', 'AGG')
   end
 
   def test_non_unique_character_in_second_strand
-    skip
     assert_equal 1, Hamming.compute('AGG', 'AGA')
   end
 
   def test_same_nucleotides_in_different_positions
-    skip
     assert_equal 2, Hamming.compute('TAG', 'GAT')
   end
 
   def test_large_distance
-    skip
     assert_equal 4, Hamming.compute('GATACA', 'GCATAA')
   end
 
   def test_large_distance_in_off_by_one_strand
-    skip
     assert_equal 9, Hamming.compute('GGACGGATTCTG', 'AGGACGGATTCT')
   end
 
   def test_empty_strands
-    skip
     assert_equal 0, Hamming.compute('', '')
   end
 
   def test_disallow_first_strand_longer
-    skip
     assert_raises(ArgumentError) { Hamming.compute('AATG', 'AAA') }
   end
 
