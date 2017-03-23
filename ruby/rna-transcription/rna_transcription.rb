@@ -5,6 +5,8 @@ class Complement
             return "C"
         when "C"
             return "G"
+        when "T"
+            return "A"
     end
   end
 end
