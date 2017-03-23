@@ -18,3 +18,7 @@ class Complement
         return complement
     end
 end
+
+module BookKeeping
+  VERSION = 4
+end
