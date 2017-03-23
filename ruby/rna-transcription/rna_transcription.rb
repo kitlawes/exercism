@@ -1,5 +1,10 @@
 class Complement
   def self.of_dna(dna)
-    return "G"
+    case dna
+        when "G"
+            return "C"
+        when "C"
+            return "G"
+    end
   end
 end
