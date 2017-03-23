@@ -11,6 +11,8 @@ class Complement
                 complement += "A"
             when "A"
                 complement += "U"
+            else
+                return ""
             end
         end
         return complement
