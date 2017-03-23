@@ -7,6 +7,8 @@ class Complement
             return "G"
         when "T"
             return "A"
+        when "A"
+            return "U"
     end
   end
 end
