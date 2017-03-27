@@ -1,6 +1,6 @@
 class School
 
-  def initialize(*factors)
+  def initialize()
     @everyone = []
   end
   
