@@ -75,7 +75,3 @@ class Palindrome
   end
   
 end
-
-module BookKeeping
-  VERSION = 2
-end
