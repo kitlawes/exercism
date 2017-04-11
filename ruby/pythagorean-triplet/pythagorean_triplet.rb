@@ -19,7 +19,7 @@ class Triplet
   end
   
   def self.where(arguments)
-  
+    
     if arguments[:min_factor].nil?
       arguments[:min_factor] = 1
     end
@@ -36,7 +36,7 @@ class Triplet
       end
     end
   	return triplets
-  	
+    
   end
   
 end
